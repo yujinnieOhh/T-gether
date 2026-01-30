@@ -1,9 +1,14 @@
-import { Rubik, Gowun_Dodum, Gamja_Flower } from "next/font/google";
+import { Rubik, Gowun_Dodum, Gamja_Flower, Do_Hyeon } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
 // 로고용
 const rubik = Rubik({ subsets: ["latin"], variable: "--font-rubik" });
+const dohyeon = Do_Hyeon({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-dohyeon",
+});
 // 일기 본문용
 const gowunDodum = Gowun_Dodum({
   weight: "400",
@@ -30,11 +35,9 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${pretendard.variable} ${rubik.variable} ${gowunDodum.variable} ${gamjaFlower.variable}`}
+      className={`${pretendard.variable} ${rubik.variable} ${dohyeon.variable} ${gowunDodum.variable} ${gamjaFlower.variable}`}
     >
-      <body className="font-pretendard bg-background text-text-main">
-        {children}
-      </body>
+      <body className="font-main bg-background text-text-main">{children}</body>
     </html>
   );
 }

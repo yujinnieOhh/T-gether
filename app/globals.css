@@ -5,8 +5,9 @@
 
 @theme {
   /* 1. 폰트 설정 */
-  --font-pretendard: var(--font-pretendard);
-  --font-logo: var(--font-rubik);
+  --font-main: var(--font-pretendard);
+  --font-logo-eng: var(--font-rubik);
+  --font-logo-kor: var(--font-dohyeon);
   --font-diary: var(--font-gowun);
   --font-share: var(--font-gamja);
 
