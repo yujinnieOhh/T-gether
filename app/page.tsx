@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <main>
       <TopHeader />
-
       <PageWrapper>
         <div>
           <p>메인 화면</p>
