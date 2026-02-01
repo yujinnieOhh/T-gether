@@ -20,7 +20,12 @@ export default function TopHeader({ showBackButton = true }: TopHeaderProps) {
         )}
       </div>
       <div className="flex items-center">
-        <Image src="/logo-icon.svg" width={40} height={40} alt="logo icon" />
+        <Image
+          src="/icons/logo-icon.svg"
+          width={40}
+          height={40}
+          alt="logo icon"
+        />
         <p className="font-logo-kor text-accent text-3xl">트게더</p>
       </div>
       <div>
