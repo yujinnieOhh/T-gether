@@ -21,7 +21,7 @@ export default function TopHeader({ showBackButton = true }: TopHeaderProps) {
       </div>
       <div className="flex items-center">
         <Image
-          src="/icons/logo-icon.svg"
+          src="/icons/Tgether-logo.svg"
           width={40}
           height={40}
           alt="logo icon"
