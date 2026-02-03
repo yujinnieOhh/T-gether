@@ -13,6 +13,7 @@ export default function SocialButton({ provider }: SocialButtonProps) {
   const config = {
     kakao: {
       src: "/icons/kakao-login.png",
+      bgColor: "bg-[#FEE500]",
       alt: "카카오 로그인",
     },
     google: {
