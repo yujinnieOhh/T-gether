@@ -6,6 +6,7 @@ import {
   Fredoka,
 } from "next/font/google";
 import localFont from "next/font/local";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 // 로고용
@@ -53,7 +54,10 @@ export default function RootLayout({
       lang="ko"
       className={`${pretendard.variable} ${rubik.variable} ${dohyeon.variable} ${fredoka.variable} ${cafe24.variable} ${gowunDodum.variable} ${gamjaFlower.variable}`}
     >
-      <body className="font-main bg-background text-text-main">{children}</body>
+      <body className="font-main bg-background text-text-main">
+        {children}
+        <Toaster position="top-center" richColors />
+      </body>
     </html>
   );
 }

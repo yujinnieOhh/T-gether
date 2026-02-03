@@ -30,7 +30,7 @@ export default function SocialButton({ provider }: SocialButtonProps) {
     await supabase.auth.signInWithOAuth({
       provider,
       options: {
-        redirectTo: `${window.location.origin}/callback`,
+        redirectTo: `${window.location.origin}/callback?next=/onboarding`,
       },
     });
   };
