@@ -11,17 +11,17 @@ export default function LoginPage() {
     >
       {/* 로고 이미지 */}
       <Image
-        src="/icons/logo-icon.svg"
+        src="/icons/Tgether-logo.svg"
         width={110}
         height={110}
         alt="logo image"
       />
       {/* 로고 텍스트 */}
       <div className="flex flex-col items-center gap-2 text-accent">
-        <p className="font-logo-kor text-6xl">트게더</p>
+        <p className="font-logo-kor text-5xl">트게더</p>
         <div className="flex items-center gap-1.5 font-logo-eng text-primary-dark">
-          <p className="text-4xl">T</p>
-          <div className="flex flex-col text-sm font-bold">
+          <p className="text-5xl font-medium">T</p>
+          <div className="flex flex-col font-medium">
             <p>rip</p>
             <p>ogether</p>
           </div>

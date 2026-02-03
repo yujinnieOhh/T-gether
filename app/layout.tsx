@@ -1,4 +1,10 @@
-import { Rubik, Gowun_Dodum, Gamja_Flower, Do_Hyeon } from "next/font/google";
+import {
+  Rubik,
+  Gowun_Dodum,
+  Gamja_Flower,
+  Do_Hyeon,
+  Fredoka,
+} from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -9,6 +15,16 @@ const dohyeon = Do_Hyeon({
   subsets: ["latin"],
   variable: "--font-dohyeon",
 });
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  variable: "--font-fredoka",
+});
+const cafe24 = localFont({
+  src: "../public/fonts/Cafe24Ssurround-v2.0.woff2",
+  variable: "--font-cafe24",
+});
+
 // 일기 본문용
 const gowunDodum = Gowun_Dodum({
   weight: "400",
@@ -35,7 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${pretendard.variable} ${rubik.variable} ${dohyeon.variable} ${gowunDodum.variable} ${gamjaFlower.variable}`}
+      className={`${pretendard.variable} ${rubik.variable} ${dohyeon.variable} ${fredoka.variable} ${cafe24.variable} ${gowunDodum.variable} ${gamjaFlower.variable}`}
     >
       <body className="font-main bg-background text-text-main">{children}</body>
     </html>
